@@ -30,8 +30,21 @@ taskset --cpu-list 0
 
 0 means core you want program run on
 
+if you need run on 4 cores, then use
 ```shell
-./server 0(per create)/1(pre create i.e. thread pool) bucket_num
+taskset --cpu-list 0-3
+```
+
+the server takes two parameters, 
+the first indicates the thread strategy:
+0: per thread per request
+1: pre-created thread, i.e., thread pool
+
+the second parameter indicates the size of bucket.
+
+e.g., run the server without thread pool and a bucket of size 512
+```shell
+./server 0 512
 ```
 
 then run
