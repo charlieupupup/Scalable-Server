@@ -6,6 +6,8 @@ Testing Data.xlsx
 
 ## testing instruction
 
+rememeber to run server first, then run the client
+
 ### client
 
 build client
