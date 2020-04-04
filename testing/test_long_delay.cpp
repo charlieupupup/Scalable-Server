@@ -70,7 +70,7 @@ int main(int argc, char *argv[])
   int threadNum = atoi(argv[1]);
 
   string host("127.0.0.1");
-  int delay = 8, bucket = 1;
+  int delay = 20, bucket = 1;
 
   //runClient(hostname, delay, bucket);
 
