@@ -1,0 +1,11 @@
+version: '2'
+services:
+  server:
+    user: root
+    build: ./server
+    command: bash -c "cd temp && chmod +x build.sh && ./build.sh && taskset --cpu-list 0 ./server 0 32"
+    volumes:
+      - ./server:/temp
+    ports:
+        - "12345:12345"
+    tty: true

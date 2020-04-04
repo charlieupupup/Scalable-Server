@@ -1,0 +1,9 @@
+1. in server, there may be race condition during multi-thread programming, the result in bucket may not 
+   be correct
+
+2. if we use mutex, it may slow down performance, possble solution may be read/write lock 
+
+3. we should use lock_guard/unique_lock/scoped_lock to make sure when exception happens, lock will
+   still be unlocked
+
+4. when allocate new resource, we should always use temp-and-swap in case of exception
