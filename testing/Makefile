@@ -12,4 +12,4 @@ test_long_delay: test_long_delay.cpp
 	$(CC) $(CFLAGS) -o $@ $^
 
 clean:
-	rm -rf test *.o *~
+	rm -rf test test_long_delay *.o *~
