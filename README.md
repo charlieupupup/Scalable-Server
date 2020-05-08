@@ -1,5 +1,9 @@
 # erss-hwk4-zl246-gc171
 
+grade: 95/100
+
+Brian provides some testcase in hw4_tests
+
 ## testing data
 
 Testing Data.xlsx

@@ -1,0 +1,9 @@
+Build Targets:
+  make
+  make clean
+
+Run Command:
+  ./client <test_id> <server_hostname>
+      - valid test_id values are 0, 1, 2, 3, 4
+      - server_hostname would be the VM name, e.g. vcm-XXXX.vm.duke.edu
+
